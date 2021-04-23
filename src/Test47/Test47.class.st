@@ -1,5 +1,5 @@
 Class {
-	#name : #Test47,
+	#name : #Test47a,
 	#superclass : #Object,
 	#category : #Test47
 }
