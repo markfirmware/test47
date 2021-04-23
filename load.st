@@ -24,6 +24,11 @@ repoDir := (Smalltalk os environment at: #PWD) asFileReference parent.
                     	instanceVariableNames: ''
 	                classVariableNames: ''
 	                package: baselineClassName.
+                    (Smalltalk at: baselineClassName asSymbol)
+                        compile: '
+                            baseline: spec
+                                <baseline>
+                                spec for: #common do: [ spec package: ''' , className , ''' ] '.
                     repo workingCopy addPackageNamed: baselineClassName
                 ]
         ]
