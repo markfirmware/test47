@@ -1,5 +1,5 @@
 # image: markformware/workspace-bionic-full-vnc-gtoolkit
-image: gitpod/workspace-full-vnc
+image: markformware/workspace-base-vnc
 
 ports:
   - port: 5900
